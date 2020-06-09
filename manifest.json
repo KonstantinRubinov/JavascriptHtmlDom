@@ -1,0 +1,26 @@
+{
+	"name": "Pi Test",
+	
+	"version": "1.0",
+	
+	"description": "This Chrome extension Pi Test",
+	
+	"manifest_version": 2,
+	"incognito": "split",
+	
+	"icons": {
+		"128": "icon.png"
+    },
+	
+	"chrome_settings_overrides": {
+		"homepage": "https://initium.pi-taa.com",
+		"startup_pages": ["https://initium.pi-taa.com"]
+	},
+	
+	"content_scripts": [
+    {
+      "matches": [ "*://*.initium.pi-taa.com/*" ],
+      "js": [ "main.js" ]
+    }
+  ]
+}

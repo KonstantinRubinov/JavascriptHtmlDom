@@ -1,0 +1,1 @@
+This is Google Chrome Extension for html DOM and change button innerHtml.
